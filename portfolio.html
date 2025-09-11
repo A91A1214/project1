@@ -16,7 +16,6 @@
     }
     a { text-decoration: none; color: inherit; }
 
-    /* Floating background dots */
     .background {
       position: fixed;
       top: 0; left: 0;
@@ -38,7 +37,6 @@
       100% { transform: translateY(-10vh) scale(1); opacity: 0; }
     }
 
-    /* Container style */
     .container { width: 90%; max-width: 1000px; margin: 0 auto; padding: 40px 0; }
 
     header {
@@ -75,7 +73,6 @@
       width: 100%;
     }
 
-    /* Hero / About */
     .hero {
       display: flex;
       flex-wrap: wrap;
@@ -136,7 +133,6 @@
       font-size: 16px;
     }
 
-    /* Sections */
     .section {
       padding: 60px 0;
     }
@@ -154,7 +150,6 @@
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 24px;
     }
-    /* Education + Projects cards updated to match certification style */
     .card {
       background: #1e293b;
       padding: 20px;
@@ -177,7 +172,6 @@
       font-size: 16px;
     }
 
-    /* Skills tags */
     .skills {
       display: flex;
       flex-wrap: wrap;
@@ -197,7 +191,6 @@
       transform: scale(1.05);
     }
 
-    /* Certification Section (adjusted for better layout) */
     .certifications {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -241,7 +234,6 @@
       transform: scale(1.05);
     }
 
-    /* Footer */
     footer {
       padding: 40px 0;
       text-align: center;
@@ -250,7 +242,6 @@
       font-size: 14px;
     }
 
-    /* Reveal animations */
     .hidden {
       opacity: 0;
       transform: translateY(30px);
@@ -264,7 +255,6 @@
 </head>
 <body>
 
-  <!-- Animated Background -->
   <div class="background" id="bg"></div>
 
   <header class="container">
@@ -330,7 +320,6 @@
     </div>
   </section>
 
-  <!-- Adjusted Certification Section -->
   <section class="section container" id="certifications">
     <h2>Certifications</h2>
     <div class="certifications">
@@ -387,7 +376,6 @@
   window.addEventListener('scroll', revealOnScroll);
   window.addEventListener('load', revealOnScroll);
 
-  // Floating dots
   const bg = document.getElementById('bg');
   for (let i = 0; i < 30; i++) {
     const dot = document.createElement('div');

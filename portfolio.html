@@ -44,6 +44,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      /* box-shadow: 0 6px 16px rgba(255, 255, 255, 0.15); */
     }
     header h1 {
       font-size: 32px;
@@ -210,14 +211,14 @@
       text-align: center;
     }
     .cert-card h3 {
-      color: #93c5fd;
+      color: #61bee6;
       font-size: 18px;
       margin-bottom: 12px;
     }
     .cert-card a {
       display: inline-block;
       margin-top: 8px;
-      background: #38bdf8;
+      background: #eef2ff;
       color: #0f172a;
       padding: 8px 14px;
       border-radius: 8px;
@@ -227,13 +228,14 @@
     .cert-card:hover {
       background: #0f172a;
       transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(59, 130, 246, 0.5);
+      box-shadow: 0 10px 25px rgba(89, 113, 122, 0.5);
     }
     .cert-card a:hover {
-      background: #0ea5e9;
+      background: #eef2ff;
       transform: scale(1.05);
     }
 
+    /* Footer */
     footer {
       padding: 40px 0;
       text-align: center;
@@ -272,10 +274,10 @@
     <div class="intro hidden">
       <h2>Hi, I'm Pravallika</h2>
       <p>Frontend Developer & Problem Solver passionate about learning, building and delivering clean & impactful web solutions.</p>
-      <a class="btn" href="#projects">Connect with me</a>
+      <a class="btn" href="https://www.linkedin.com/in/pravallika-dosapati-85a7a6293/">Connect with me</a>
     </div>
     <div class="profile hidden">
-      <img src="23A91A1214.png" alt="Profile Photo">
+      <img src="https://i.postimg.cc/yYCFfbmt/23-A91-A1214.png" alt="Profile Photo">
       <h3>Pravallika D</h3>
       <p>Rajamahendravaram, Andhra Pradesh</p>
       <p>dosapatipravallika9@gmail.com</p>
@@ -364,7 +366,6 @@
   </footer>
 
 <script>
-  // Scroll reveal
   const hiddenElems = document.querySelectorAll('.hidden');
   function revealOnScroll() {
     const triggerBottom = window.innerHeight * 0.85;
